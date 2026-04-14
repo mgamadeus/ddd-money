@@ -1,0 +1,24 @@
+{
+    "name": "mgamadeus/ddd-common-money",
+    "description": "Currency and MoneyAmount value objects for mgamadeus/ddd",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Marius-Eugen Gerdan",
+            "email": "marius@gerdan.net"
+        }
+    ],
+    "require": {
+        "mgamadeus/ddd": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "DDD\\": "src/"
+        }
+    },
+    "extra": {
+        "ddd-module": "DDD\\Modules\\Money\\MoneyModule"
+    }
+}
