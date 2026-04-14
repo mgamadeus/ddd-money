@@ -20,5 +20,10 @@
     },
     "extra": {
         "ddd-module": "DDD\\Modules\\Money\\MoneyModule"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
     }
 }
