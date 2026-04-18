@@ -3,7 +3,7 @@
     "description": "Currency and MoneyAmount value objects for mgamadeus/ddd",
     "minimum-stability": "stable",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Marius-Eugen Gerdan",
