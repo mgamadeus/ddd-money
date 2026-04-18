@@ -1,5 +1,5 @@
 ---
-name: money-module-specialist
+name: ddd-module-money-specialist
 description: Work with Currency and MoneyAmount value objects from the ddd-common-money module. Use when handling monetary values, currency codes, or price properties in entities.
 metadata:
   author: mgamadeus

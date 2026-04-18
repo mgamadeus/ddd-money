@@ -104,13 +104,14 @@ class Currency extends ValueObject
      * @var string currency symbol
      * @example $, €
      */
-    public ?string $symbol;
+    public ?string $symbol = null;
     /**
      * @var bool determines if symbol is used before number, e.g. $ 1.0, or 1 €
      */
     public bool $displaySymbolBeforeAmount = false;
 
-    public static function byIsoCode(string $isoCode):Currency {
+    public static function byIsoCode(string $isoCode): Currency
+    {
         return new Currency($isoCode);
     }
 
@@ -118,20 +119,18 @@ class Currency extends ValueObject
     {
         parent::__construct();
         if (!$isoCode) {
-            $isoCode = self::DEFAULT_ISO_CODE;
             return;
         }
         $isoCode = strtoupper($isoCode);
-        if (in_array($isoCode, self::ALLOWED_CURRENCIES))
+        if (in_array($isoCode, self::ALLOWED_CURRENCIES)) {
             $this->isoCode = $isoCode;
-        else
+        } else {
             $this->isoCode = self::DEFAULT_ISO_CODE;
+        }
     }
 
     public function uniqueKey(): string
     {
         return self::uniqueKeyStatic($this->isoCode);
     }
-
-
 }
