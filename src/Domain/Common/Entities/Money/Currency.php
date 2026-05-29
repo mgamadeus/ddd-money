@@ -36,6 +36,30 @@ class Currency extends ValueObject
     public const string VEF = 'VEF';
     public const string ZAR = 'ZAR';
 
+    // ISO 4217 codes added 2026-05 (donated from RC's local Currency override).
+    public const string BDT = 'BDT';
+    public const string BGN = 'BGN';
+    public const string DZD = 'DZD';
+    public const string EGP = 'EGP';
+    public const string GHS = 'GHS';
+    public const string HKD = 'HKD';
+    public const string ILS = 'ILS';
+    public const string JMD = 'JMD';
+    public const string KES = 'KES';
+    public const string KHR = 'KHR';
+    public const string KRW = 'KRW';
+    public const string KWD = 'KWD';
+    public const string MAD = 'MAD';
+    public const string NGN = 'NGN';
+    public const string NZD = 'NZD';
+    public const string PKR = 'PKR';
+    public const string RON = 'RON';
+    public const string SAR = 'SAR';
+    public const string THB = 'THB';
+    public const string TRY = 'TRY';
+    public const string TWD = 'TWD';
+    public const string VND = 'VND';
+
     public const array ALLOWED_CURRENCIES = [
         self::ARS,
         self::AUD,
@@ -62,7 +86,29 @@ class Currency extends ValueObject
         self::SGD,
         self::USD,
         self::VEF,
-        self::ZAR
+        self::ZAR,
+        self::BDT,
+        self::BGN,
+        self::DZD,
+        self::EGP,
+        self::GHS,
+        self::HKD,
+        self::ILS,
+        self::JMD,
+        self::KES,
+        self::KHR,
+        self::KRW,
+        self::KWD,
+        self::MAD,
+        self::NGN,
+        self::NZD,
+        self::PKR,
+        self::RON,
+        self::SAR,
+        self::THB,
+        self::TRY,
+        self::TWD,
+        self::VND
     ];
 
     public const string DEFAULT_ISO_CODE = self::EUR;
